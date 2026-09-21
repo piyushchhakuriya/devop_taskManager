@@ -1,0 +1,8 @@
+services:
+  backend:
+    image: piyushchhakuriya123/my-node-app:1.1
+    container_name: task-manager-backend-compose
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./backend/.env
