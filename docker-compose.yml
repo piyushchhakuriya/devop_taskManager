@@ -10,8 +10,9 @@ services:
     restart: unless-stopped
 
   frontend:
-    image: devops-task-manager-frontend:1.0
+    image: piyushchhakuriya123/my-node-app:frontend-1.0
     container_name: task-manager-frontend-compose
     ports:
       - "5173:4173"
     restart: unless-stopped
+    
