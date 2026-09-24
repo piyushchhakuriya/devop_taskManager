@@ -4,7 +4,7 @@ function App() {
     const [message, setMessage] = useState("Connecting to backend...");
 
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/`)
+        fetch("http://65.0.176.82:5000/")
             .then((response) => response.json())
             .then((data) => {
                 setMessage(data.message);
