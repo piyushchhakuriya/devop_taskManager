@@ -10,7 +10,7 @@ function App() {
                 setMessage(data.message);
             })
             .catch(() => {
-                setMessage("Backend connection failed");
+                setMessage("Backend connection faileed");
             });
     }, []);
 
